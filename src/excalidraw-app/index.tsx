@@ -166,7 +166,8 @@ const initializeScene = async (opts: {
 };
 
 const PlusLinkJSX = (
-  <p style={{ direction: "ltr", unicodeBidi: "embed" }}>
+  <>
+    {/* <p style={{ direction: "ltr", unicodeBidi: "embed" }}>
     Introducing Excalidraw+
     <br />
     <a
@@ -176,7 +177,8 @@ const PlusLinkJSX = (
     >
       Try out now!
     </a>
-  </p>
+  </p> */}
+  </>
 );
 
 const ExcalidrawWrapper = () => {
