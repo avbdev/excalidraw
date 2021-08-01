@@ -56,8 +56,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: v${{ github.run_number }}
-          release_name: Release V${{ github.run_number }}
+          tag_name: v0.1.${{ github.run_number }}
+          release_name: Release v0.1.${{ github.run_number }}
 
       - name: Upload asset to GitHub Releases
         uses: actions/upload-release-asset@v1
@@ -66,5 +66,5 @@ jobs:
         with:
           upload_url: ${{ steps.create-new-github-release.outputs.upload_url }}
           asset_path: ./avd-dev-white-board-app.zip
-          asset_name: avbd-wb-app-v${{ github.run_number }}.zip
+          asset_name: avbd-wb-app-v0.1.${{ github.run_number }}.zip
           asset_content_type: application/zip
