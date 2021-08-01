@@ -30,7 +30,7 @@ jobs:
         run: yarn build
 
       - name: Upload artifacts
-        uses: actions/upload-artifacts@v2
+        uses: actions/upload-artifact@v2
         with:
           name: whiteboard-app
           path: build/
